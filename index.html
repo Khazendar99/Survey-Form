@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Khazendar Survey form</h1>
+    <form>
+      <div class="form-div">
+        <label for="name">Name</label>
+        <input
+          name="name"
+          placeholder="Enter your name"
+          id="name"
+          type="text"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label for="email">Email</label>
+        <input
+          name="email"
+          placeholder="Enter your email"
+          id="email"
+          type="email"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label for="age">Age</label>
+        <input
+          min="12"
+          max="100"
+          name="age"
+          placeholder="Enter your age"
+          id="age"
+          type="number"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label for="role">Which option best describes you? </label>
+        <select name="role" id="role">
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-div">
+        <label>Would you recommend GeeksforGeeks to a friend? </label>
+        <label for="recommend-1">
+          <input type="radio" name="recommend" id="recommend-1" required />
+          Yes
+        </label>
+        <label for="recommend-2">
+          <input type="radio" name="recommend" id="recommend-2" required />
+          No
+        </label>
+        <label for="recommend-3">
+          <input type="radio" name="recommend" id="recommend-3" required />
+          Maybe
+        </label>
+      </div>
+      <div class="form-div">
+        <label>
+          Languages and Frameworks known <small>(Check all that apply)</small>
+        </label>
+        <label for="input-1">
+          <input type="checkbox" value="C" name="languages[]" id="input-1" />
+          C
+        </label>
+        <label for="input-2">
+          <input type="checkbox" value="C++" name="languages[]" id="input-2" />
+          C++
+        </label>
+        <label for="input-3">
+          <input type="checkbox" value="C#" name="languages[]" id="input-3" />
+          C#
+        </label>
+        <label for="input-4">
+          <input type="checkbox" value="Java" name="languages[]" id="input-4" />
+          Java
+        </label>
+        <label for="input-5">
+          <input
+            type="checkbox"
+            value="Python"
+            name="languages[]"
+            id="input-5"
+          />
+          Python
+        </label>
+        <label for="input-6">
+          <input
+            type="checkbox"
+            value="Javascript"
+            name="languages[]"
+            id="input-6"
+          />
+          Javascript
+        </label>
+        <label for="input-7">
+          <input
+            type="checkbox"
+            value="React"
+            name="languages[]"
+            id="input-7"
+          />
+          React
+        </label>
+        <label for="input-8">
+          <input
+            type="checkbox"
+            value="Angular"
+            name="languages[]"
+            id="input-8"
+          />
+          Angular
+        </label>
+        <label for="input-9">
+          <input
+            type="checkbox"
+            value="Django"
+            name="languages[]"
+            id="input-9"
+          />
+          Django
+        </label>
+        <label for="input-10">
+          <input
+            type="checkbox"
+            value="Spring"
+            name="languages[]"
+            id="input-10"
+          />
+          Spring
+        </label>
+      </div>
+      <div class="form-div">
+        <label for="comment">Any comments or suggestions </label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter your comment here"
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
